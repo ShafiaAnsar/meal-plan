@@ -38,7 +38,7 @@ export function FamilyMembers() {
           <Plus className="w-4 h-4 mr-2" /> Add Member
         </Button>
       </div>
-      <div className="flex gap-4 overflow-x-auto p-4">
+      <div style={{ scrollbarWidth: 'none' }} className="flex gap-4 overflow-x-auto p-4">
      {familyMembers?.map((member, index) => (
             <motion.div
             key={member._id}
